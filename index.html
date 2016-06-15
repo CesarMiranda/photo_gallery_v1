@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="header">
+		<div class="container text-center">
+			<input type="text" placeholder="Search" id="search">
+		</div>
+	</div>
+	<div id="gallery_container" class="container clearfix">
+		<div class="row clearfix text-center">
+			<div class="col">
+				<a href="Photos/image1.jpg"><img src="Photos/Thumbnails/image1.jpg" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields."></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image2.jpg"><img src="Photos/Thumbnails/image2.jpg" alt="The lake was so calm today. We had a great view of the snow on the mountains from here."></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image3.jpg"><img src="Photos/Thumbnails/image3.jpg" alt="I hiked to the top of the mountain and got this picture of the canyon and trees below."></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image4.jpg"><img src="Photos/Thumbnails/image4.jpg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."></a>
+			</div>
+		</div>
+		<div class="row clearfix text-center">
+			<div class="col">
+				<a href="Photos/image5.jpg"><img src="Photos/Thumbnails/image5.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image6.jpg"><img src="Photos/Thumbnails/image6.jpg" alt="Fall is coming, I love when the leaves on the trees start to change color."></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image7.jpg"><img src="Photos/Thumbnails/image7.jpg" alt="I drove past this plantation yesterday, everything is so green!"></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image8.jpg"><img src="Photos/Thumbnails/image8.jpg" alt="My summer vacation to the Oregon Coast. I love the sandy dunes!"></a>
+			</div>
+		</div>
+		<div class="row clearfix text-center">
+			<div class="col">
+				<a href="Photos/image9.jpg"><img src="Photos/Thumbnails/image9.jpg" alt="We enjoyed a quiet stroll down this countryside lane."></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image10.jpg"><img src="Photos/Thumbnails/image10.jpg" alt="Sunset at the coast! The sky turned a lovely shade of orange."></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image11.jpg"><img src="Photos/Thumbnails/image11.jpg" alt="I did a tour of a cave today and the view of the landscape below was breathtaking."></a>
+			</div>
+			<div class="col">
+				<a href="Photos/image12.jpg"><img src="Photos/Thumbnails/image12.jpg" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."></a>
+			</div>
+			<input type="hidden" value="0" id="gallery_val">
+			<input type="hidden" value="0" id="video_val">
+		</div>
+	</div>
+		<div id="gallery_modal">
+		<div id="close_modal"><i class="fa fa-times fa-2x"></i></div>
+		<div id="modal_img_container">
+			<img src="#" id="modal_img" alt="Modal Image">
+			<div id="caption_container">
+				<p id="caption_img"></p>
+			</div>
+		</div>
+		<i class="cursor fa fa-angle-double-left"></i>
+		<i class="cursor fa fa-angle-double-right"></i>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/gallery.js"></script>
+</body>
+</html>
